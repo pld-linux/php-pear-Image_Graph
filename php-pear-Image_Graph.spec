@@ -1,5 +1,3 @@
-# ToDo:
-# - pl description
 %include	/usr/lib/rpm/macros.php
 %define         _class          Image
 %define         _subclass       Graph
@@ -7,7 +5,7 @@
 %define		_pearname	%{_class}_%{_subclass}
 
 Summary:	%{_pearname} - Drawing graphs out of numerical data (traffic, money, ...)
-Summary(pl):	%{_pearname} - Rysowanie grafów danych liczbowych (handel, pieniadze, ...)
+Summary(pl):	%{_pearname} - rysowanie wykresów danych liczbowych (handel, pieni±dze, ...)
 Name:		php-pear-%{_pearname}
 Version:	0.1
 Release:	1
@@ -34,16 +32,25 @@ Features:
 
 This class has in PEAR status: %{_status}.
 
-#%description -l pl
-#
-#Ta klasa ma w PEAR status: %{_status}.
+%description -l pl
+Mo¿liwo¶ci:
+- rysowanie wykresów w ró¿nych formatach (liniowym, s³upkowym, punktów
+  oznaczonych kwadratami/rombami/trójk±tami...)
+- wiele wykresów na jednym diagramie
+- do dwóch osi Y
+- elastyczne dostosowywanie warto¶ci na osi Y
+- zmienny krok dla osi Y
+- obsluga koloru
+- ...
+
+Ta klasa ma w PEAR status: %{_status}.
 
 %prep
 %setup -q -c
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/%{_subclass}/
+install -d $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/%{_subclass}
 
 install %{_pearname}-%{version}/*.php              $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}
 install %{_pearname}-%{version}/%{_subclass}/*.php $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/%{_subclass}

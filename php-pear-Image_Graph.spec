@@ -4,7 +4,7 @@
 %define		_status		alpha
 %define		_pearname	%{_class}_%{_subclass}
 
-Summary:	%{_pearname} - Drawing graphs out of numerical data (traffic, money, ...)
+Summary:	%{_pearname} - drawing graphs out of numerical data (traffic, money, ...)
 Summary(pl):	%{_pearname} - rysowanie wykresów danych liczbowych (handel, pieni±dze, ...)
 Name:		php-pear-%{_pearname}
 Version:	0.1

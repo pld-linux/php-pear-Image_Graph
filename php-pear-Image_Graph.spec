@@ -30,7 +30,7 @@ Features:
 - color-support
 - ...
 
-This class has in PEAR status: %{_status}.
+In PEAR status of this package is: %{_status}.
 
 %description -l pl
 Mo¿liwo¶ci:

@@ -40,7 +40,7 @@ Mo¿liwo¶ci:
 - do dwóch osi Y
 - elastyczne dostosowywanie warto¶ci na osi Y
 - zmienny krok dla osi Y
-- obsluga koloru
+- obs³uga koloru
 - ...
 
 Ta klasa ma w PEAR status: %{_status}.

@@ -52,9 +52,9 @@ Ta klasa ma w PEAR status: %{_status}.
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/%{_subclass}/{Data,DataMarker,Fill}
 
-install %{_pearname}-%{version}/*.php              $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}
-install %{_pearname}-%{version}/%{_subclass}/*.php $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/%{_subclass}
-install %{_pearname}-%{version}/%{_subclass}/Data/*.php $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/%{_subclass}/Data
+install %{_pearname}-%{version}/*.php			$RPM_BUILD_ROOT%{php_pear_dir}/%{_class}
+install %{_pearname}-%{version}/%{_subclass}/*.php	$RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/%{_subclass}
+install %{_pearname}-%{version}/%{_subclass}/Data/*.php	$RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/%{_subclass}/Data
 install %{_pearname}-%{version}/%{_subclass}/DataMarker/*.php $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/%{_subclass}/DataMarker
 install %{_pearname}-%{version}/%{_subclass}/Fill/*.php $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/%{_subclass}/Fill
 

@@ -7,12 +7,12 @@
 Summary:	%{_pearname} - drawing graphs out of numerical data (traffic, money, ...)
 Summary(pl):	%{_pearname} - rysowanie wykresów danych liczbowych (handel, pieni±dze, ...)
 Name:		php-pear-%{_pearname}
-Version:	0.1.1
-Release:	1
+Version:	0.2.0
+Release:	0.RC1
 License:	PHP 2.02
 Group:		Development/Languages/PHP
-Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	77d6c7ba11be8d315657e06146908814
+Source0:	http://pear.php.net/get/%{_pearname}-%{version}RC1.tgz
+# Source0-md5:	07a107cf813abca17ab07fb5b0da43bb
 URL:		http://pear.php.net/package/Image_Graph/
 BuildRequires:	rpm-php-pearprov >= 4.0.2-98
 Requires:	php-pear
@@ -50,17 +50,19 @@ Ta klasa ma w PEAR status: %{_status}.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/%{_subclass}
+install -d $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/%{_subclass}/{Data,DataMarker,Fill}
 
-install %{_pearname}-%{version}/*.php              $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}
-install %{_pearname}-%{version}/%{_subclass}/*.php $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/%{_subclass}
+install %{_pearname}-%{version}RC1/*.php              $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}
+install %{_pearname}-%{version}RC1/%{_subclass}/*.php $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/%{_subclass}
+install %{_pearname}-%{version}RC1/%{_subclass}/Data/*.php $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/%{_subclass}/Data
+install %{_pearname}-%{version}RC1/%{_subclass}/DataMarker/*.php $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/%{_subclass}/DataMarker
+install %{_pearname}-%{version}RC1/%{_subclass}/Fill/*.php $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/%{_subclass}/Fill
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc %{_pearname}-%{version}/docs
-%dir %{php_pear_dir}/%{_class}/%{_subclass}
+%doc %{_pearname}-%{version}RC1/docs
 %{php_pear_dir}/%{_class}/*.php
-%{php_pear_dir}/%{_class}/%{_subclass}/*.php
+%{php_pear_dir}/%{_class}/%{_subclass}

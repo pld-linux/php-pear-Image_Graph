@@ -1,6 +1,6 @@
 %include	/usr/lib/rpm/macros.php
-%define         _class          Image
-%define         _subclass       Graph
+%define		_class		Image
+%define		_subclass	Graph
 %define		_status		alpha
 %define		_pearname	%{_class}_%{_subclass}
 

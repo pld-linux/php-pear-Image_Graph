@@ -7,12 +7,12 @@
 Summary:	%{_pearname} - drawing graphs out of numerical data (traffic, money, ...)
 Summary(pl):	%{_pearname} - rysowanie wykresów danych liczbowych (handel, pieni±dze, ...)
 Name:		php-pear-%{_pearname}
-Version:	0.1
+Version:	0.1.1
 Release:	1
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	07467c18cba340a6e84988967a2417ff
+# Source0-md5:	77d6c7ba11be8d315657e06146908814
 URL:		http://pear.php.net/package/Image_Graph/
 BuildRequires:	rpm-php-pearprov >= 4.0.2-98
 Requires:	php-pear

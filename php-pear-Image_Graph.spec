@@ -1,3 +1,6 @@
+# ToDo:
+# - update pl/en desription (sync with what's on pear's site)
+#
 %include	/usr/lib/rpm/macros.php
 %define		_class		Image
 %define		_subclass	Graph
@@ -7,12 +10,12 @@
 Summary:	%{_pearname} - drawing graphs out of numerical data (traffic, money, ...)
 Summary(pl):	%{_pearname} - rysowanie wykresów danych liczbowych (handel, pieni±dze, ...)
 Name:		php-pear-%{_pearname}
-Version:	0.5.0
+Version:	0.6.0
 Release:	1
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	08a6cfbcc614acf422aa82bd3af8436f
+# Source0-md5:	2f144455886000e5b230629e4ad71845
 URL:		http://pear.php.net/package/Image_Graph/
 BuildRequires:	rpm-php-pearprov >= 4.0.2-98
 Requires:	php-pear

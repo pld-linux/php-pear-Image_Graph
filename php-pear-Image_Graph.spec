@@ -12,6 +12,7 @@ Summary(pl):	%{_pearname} - rysowanie wykresów danych liczbowych (handel, pieni±
 Name:		php-pear-%{_pearname}
 Version:	0.7.1
 Release:	1
+Epoch:		0
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz

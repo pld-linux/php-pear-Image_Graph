@@ -18,6 +18,7 @@ Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
 # Source0-md5:	2492103af6a37f856459fe0e0e72ba86
 URL:		http://pear.php.net/package/Image_Graph/
+BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 Requires:	php-pear
 Requires:	php-pear-Image_Canvas >= 0.2.1

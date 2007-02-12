@@ -8,7 +8,7 @@
 %define		_pearname	%{_class}_%{_subclass}
 
 Summary:	%{_pearname} - drawing graphs out of numerical data (traffic, money, ...)
-Summary(pl):	%{_pearname} - rysowanie wykres體 danych liczbowych (handel, pieni眃ze, ...)
+Summary(pl.UTF-8):   %{_pearname} - rysowanie wykres贸w danych liczbowych (handel, pieni膮dze, ...)
 Name:		php-pear-%{_pearname}
 Version:	0.7.2
 Release:	1
@@ -43,22 +43,22 @@ Features:
 
 In PEAR status of this package is: %{_status}.
 
-%description -l pl
-Mo縧iwo禼i:
-- rysowanie wykres體 w r罂nych formatach (liniowym, s硊pkowym, punkt體
-  oznaczonych kwadratami/rombami/tr骿k眛ami...)
-- wiele wykres體 na jednym diagramie
-- do dw骳h osi Y
-- elastyczne dostosowywanie warto禼i na osi Y
+%description -l pl.UTF-8
+Mo偶liwo艣ci:
+- rysowanie wykres贸w w r贸偶nych formatach (liniowym, s艂upkowym, punkt贸w
+  oznaczonych kwadratami/rombami/tr贸jk膮tami...)
+- wiele wykres贸w na jednym diagramie
+- do dw贸ch osi Y
+- elastyczne dostosowywanie warto艣ci na osi Y
 - zmienny krok dla osi Y
-- obs硊ga koloru
+- obs艂uga koloru
 - ...
 
 Ta klasa ma w PEAR status: %{_status}.
 
 %package tests
 Summary:	Tests for PEAR::%{_pearname}
-Summary(pl):	Testy dla PEAR::%{_pearname}
+Summary(pl.UTF-8):   Testy dla PEAR::%{_pearname}
 Group:		Development/Languages/PHP
 Requires:	%{name} = %{epoch}:%{version}-%{release}
 AutoReq:	no
@@ -67,7 +67,7 @@ AutoProv:	no
 %description tests
 Tests for PEAR::%{_pearname}.
 
-%description tests -l pl
+%description tests -l pl.UTF-8
 Testy dla PEAR::%{_pearname}.
 
 %prep

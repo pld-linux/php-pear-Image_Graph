@@ -8,7 +8,7 @@
 %define		_pearname	%{_class}_%{_subclass}
 
 Summary:	%{_pearname} - drawing graphs out of numerical data (traffic, money, ...)
-Summary(pl.UTF-8):   %{_pearname} - rysowanie wykresów danych liczbowych (handel, pieniądze, ...)
+Summary(pl.UTF-8):	%{_pearname} - rysowanie wykresów danych liczbowych (handel, pieniądze, ...)
 Name:		php-pear-%{_pearname}
 Version:	0.7.2
 Release:	1
@@ -58,7 +58,7 @@ Ta klasa ma w PEAR status: %{_status}.
 
 %package tests
 Summary:	Tests for PEAR::%{_pearname}
-Summary(pl.UTF-8):   Testy dla PEAR::%{_pearname}
+Summary(pl.UTF-8):	Testy dla PEAR::%{_pearname}
 Group:		Development/Languages/PHP
 Requires:	%{name} = %{epoch}:%{version}-%{release}
 AutoReq:	no

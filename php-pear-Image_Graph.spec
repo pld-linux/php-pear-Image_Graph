@@ -11,7 +11,7 @@ Summary:	%{_pearname} - drawing graphs out of numerical data (traffic, money, ..
 Summary(pl.UTF-8):	%{_pearname} - rysowanie wykresów danych liczbowych (handel, pieniądze, ...)
 Name:		php-pear-%{_pearname}
 Version:	0.7.2
-Release:	1
+Release:	2
 Epoch:		0
 License:	PHP 2.02
 Group:		Development/Languages/PHP

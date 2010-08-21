@@ -1,18 +1,16 @@
-# ToDo:
+# TODO:
 # - update pl/en desription (sync with what's on pear's site)
-#
+
 %include	/usr/lib/rpm/macros.php
 %define		_class		Image
 %define		_subclass	Graph
 %define		_status		alpha
 %define		_pearname	%{_class}_%{_subclass}
-
 Summary:	%{_pearname} - drawing graphs out of numerical data (traffic, money, ...)
 Summary(pl.UTF-8):	%{_pearname} - rysowanie wykresów danych liczbowych (handel, pieniądze, ...)
 Name:		php-pear-%{_pearname}
 Version:	0.7.2
-Release:	2
-Epoch:		0
+Release:	3
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
@@ -24,6 +22,8 @@ BuildRequires:	rpmbuild(macros) >= 1.300
 Requires:	php-pear
 Requires:	php-pear-Image_Canvas >= 0.3.0
 Requires:	php-pear-PEAR-core >= 1:1.3.1
+Suggests:	php-pear-Numbers_Roman
+Suggests:	php-pear-Numbers_Words
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -60,9 +60,9 @@ Ta klasa ma w PEAR status: %{_status}.
 Summary:	Tests for PEAR::%{_pearname}
 Summary(pl.UTF-8):	Testy dla PEAR::%{_pearname}
 Group:		Development/Languages/PHP
-Requires:	%{name} = %{epoch}:%{version}-%{release}
-AutoReq:	no
+Requires:	%{name} = %{version}-%{release}
 AutoProv:	no
+AutoReq:	no
 
 %description tests
 Tests for PEAR::%{_pearname}.

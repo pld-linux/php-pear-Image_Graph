@@ -1,7 +1,6 @@
 # TODO:
 # - update pl/en desription (sync with what's on pear's site)
 
-%include	/usr/lib/rpm/macros.php
 %define		_status		alpha
 %define		_pearname	Image_Graph
 Summary:	%{_pearname} - drawing graphs out of numerical data (traffic, money, ...)
